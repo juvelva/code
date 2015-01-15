@@ -551,7 +551,7 @@ colnames(avod.v14)<-colnames(avod.dx)
 avod.or<-rbind(avod.dx,"","",avod.v14)
 
 odds.dat<-subset(dat_m,dat_m$antisoc.base=="Yes")
-anti<-data.frame(table(odds.dat$TherapyCode,odds.dat$Response)[,c(2,1)])
+anti<-data.frame(table(odds.dat$TherapyCode,factor(odds.dat$Response,levels=c(0,1)))[,c(2,1)])
 colnames(anti)<-c("Response:Yes","No")
 
 rs.or<-list(apor,avod.or,anti)

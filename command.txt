@@ -33,3 +33,10 @@ Working Directory
 
 Repository stage
 
+Git tracks changes of files.
+
+$ git diff HEAD -- readme.txt 
+
+
+not in stage:git checkout -- file
+in stage(added):1 git reset HEAD file 2 git checkout -- file

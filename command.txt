@@ -1,0 +1,35 @@
+$ mkdir learngit
+$ cd learngit
+$ pwd
+/Users/michael/learngit
+$ git init
+Initialized empty Git repository in /Users/michael/learngit/.git/
+
+$ git add readme.txt
+$ git commit -m "wrote a readme file"
+[master (root-commit) cb926e7] wrote a readme file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 readme.txt
+
+##################
+
+$ git status
+$ git diff readme.txt 
+$ git add readme.txt
+
+$ git commit -m "add distributed"
+
+$ git log
+$ git log --pretty=oneline
+
+$ git reset --hard HEAD^
+$ git reset --hard HEAD^^
+$ git reset --hard HEAD~100
+
+$ cat readme.txt
+$ git reset --hard 3628164
+
+Working Directory
+
+Repository stage
+
